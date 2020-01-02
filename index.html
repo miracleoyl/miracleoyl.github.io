@@ -40,16 +40,18 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: './public/search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="Miracle world">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Miracle Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Miracle Blog">
+<meta property="og:description" content="Miracle world">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Miracle Ouyang">
 <meta name="twitter:card" content="summary">
@@ -66,7 +68,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>Miracle Blog</title>
   
 
 
@@ -110,10 +112,11 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Miracle Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+        <p class="site-subtitle">blog</p>
   </div>
 
   <div class="site-nav-toggle">
@@ -134,14 +137,49 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -170,11 +208,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Miracle Ouyang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Miracle world">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Miracle Blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -291,7 +329,7 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Miracle Ouyang</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">Miracle world</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -370,6 +408,10 @@
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
