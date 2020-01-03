@@ -49,18 +49,18 @@
   <meta name="description" content="Generally you could go through concepts from official User guide: https:&#x2F;&#x2F;docs.sonarqube.org&#x2F;latest&#x2F;user-guide&#x2F;concepts&#x2F;, also you could get a few important items as following. Static Code Analysis¶">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Concepts - SonarQube in Successfactors">
-<meta property="og:url" content="http://yoursite.com/2020/01/03/SonarQube-in-SFSF/index.html">
+<meta property="og:url" content="http://yoursite.com/2020/01/03/SonarQubeInSFSF/SonarQube-in-SFSF/index.html">
 <meta property="og:site_name" content="Miracle Blog">
 <meta property="og:description" content="Generally you could go through concepts from official User guide: https:&#x2F;&#x2F;docs.sonarqube.org&#x2F;latest&#x2F;user-guide&#x2F;concepts&#x2F;, also you could get a few important items as following. Static Code Analysis¶">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/2020/01/03/SonarQube-in-SFSF/Concepts%20-%20SonarQube%20in%20Successfactors_files/code-coverage-example.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/03/SonarQubeInSFSF/SonarQube-in-SFSF/code-coverage-example.png">
 <meta property="article:published_time" content="2020-01-03T01:43:06.807Z">
-<meta property="article:modified_time" content="2020-01-03T01:49:30.226Z">
+<meta property="article:modified_time" content="2020-01-03T01:59:31.768Z">
 <meta property="article:author" content="Miracle Ouyang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/01/03/SonarQube-in-SFSF/Concepts%20-%20SonarQube%20in%20Successfactors_files/code-coverage-example.png">
+<meta name="twitter:image" content="http://yoursite.com/2020/01/03/SonarQubeInSFSF/SonarQube-in-SFSF/code-coverage-example.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/01/03/SonarQube-in-SFSF/">
+<link rel="canonical" href="http://yoursite.com/2020/01/03/SonarQubeInSFSF/SonarQube-in-SFSF/">
 
 
 <script id="page-configurations">
@@ -207,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/03/SonarQube-in-SFSF/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/03/SonarQubeInSFSF/SonarQube-in-SFSF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -231,7 +231,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-01-03 09:43:06 / Modified: 09:49:30" itemprop="dateCreated datePublished" datetime="2020-01-03T09:43:06+08:00">2020-01-03</time>
+              <time title="Created: 2020-01-03 09:43:06 / Modified: 09:59:31" itemprop="dateCreated datePublished" datetime="2020-01-03T09:43:06+08:00">2020-01-03</time>
             </span>
 
           
@@ -266,12 +266,7 @@
 
 <p>At that moment, Code Hygiene team and Development Produtivity team evaluated and then introduced SonarQube which could behave with reactive and proactive approach to help development team to handle static code issues effectively.</p>
 <h2 id="quality-profile">Quality Profile<a class="headerlink" href="https://github.wdf.sap.corp/pages/Codehygiene/SF-SonarQube-UserGuide/concepts/#quality-profile" target="_blank" rel="noopener" title="Permanent link">¶</a></h2>
-<p>Simply said it's a set of rules and Quality Profiles are defined for individual languages. So each project will be measured with a few Quality Profiles for different languages used in the project. In BizX, we provided two default profiles:</p>
-<ol>
-<li>Java: <a href="https://sf-sonar.devprod.sap.corp/profiles/show?language=java&amp;name=sfbizx_level4" target="_blank" rel="noopener">sfbizx_level4</a>, not only rules provided by SonarQube, but also a few <a href="https://sf-sonar.devprod.sap.corp/coding_rules#repositories=bizx-java" target="_blank" rel="noopener">rules</a> provided by SuccessFactors</li>
-<li>JavaScript: <a href="https://sf-sonar.devprod.sap.corp/profiles/show?language=js&amp;name=sfbizx_level4" target="_blank" rel="noopener">sfbizx_level4</a></li>
-</ol>
-<p>Right now both of profiles are managed by Code Hygiene team, please email to waylan.wang@sap.com or get support in <a href="https://jam4.sapjam.com/groups/rQM9dOW5sWwrLmh7zZkp3Q/overview_page/JGOzr54ieFwwLBfIG045ay" target="_blank" rel="noopener">JAM</a></p>
+<p>Simply said it's a set of rules and Quality Profiles are defined for individual languages.</p>
 <h2 id="issue-severity">Issue Severity<a class="headerlink" href="https://github.wdf.sap.corp/pages/Codehygiene/SF-SonarQube-UserGuide/concepts/#issue-severity" target="_blank" rel="noopener" title="Permanent link">¶</a></h2>
 <p>Each issue has one of five severities:</p>
 <ul>
@@ -323,7 +318,7 @@ Where</p>
 <li>EL = total number of executable lines (lines_to_cover)</li>
 </ul>
 <p>Example:</p>
-<p><img alt="details of code coverage metric" src="./Concepts - SonarQube in Successfactors_files/code-coverage-example.png"></p>
+<p><img alt="details of code coverage metric" src="./code-coverage-example.png"></p>
 <p>$$Overall Coverage: 70.6\% = (41879-14616+108213-29492)/(41879+108213) $$</p>
 <h2 id="new-code-coverage">New Code Coverage<a class="headerlink" href="https://github.wdf.sap.corp/pages/Codehygiene/SF-SonarQube-UserGuide/concepts/#new-code-coverage" target="_blank" rel="noopener" title="Permanent link">¶</a></h2>
 <p>Identical to Coverage but restricted to <strong>new / updated source code</strong>.</p>
@@ -375,7 +370,7 @@ Where</p>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/01/02/hello-world/" rel="prev" title="NPS">
+    <a href="/2020/01/02/NPS/NPS/" rel="prev" title="NPS">
       <i class="fa fa-chevron-left"></i> NPS
     </a></div>
       <div class="post-nav-item"></div>
