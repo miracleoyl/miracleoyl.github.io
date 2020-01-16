@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>docker</title>
+      <link href="/2020/01/16/docker/"/>
+      <url>/2020/01/16/docker/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h1><p><a href="https://www.runoob.com/docker/ubuntu-docker-install.html" target="_blank" rel="noopener">https://www.runoob.com/docker/ubuntu-docker-install.html</a> </p><h1 id="Basic-commands"><a href="#Basic-commands" class="headerlink" title="Basic commands"></a>Basic commands</h1><p>docker images 查看所有本地镜像<br>docker ps -a 查看所有本地创建的容器<br>docker rm <container_id> 删掉一个本地容器<br>docker rmi : 删除本地一个或多少镜像</container_id></p><h1 id="build-and-push"><a href="#build-and-push" class="headerlink" title="build and push"></a>build and push</h1><p>docker tag c8917e372922 cd-docker-registry.successfactors.com:5000/bizx-database/oracle-xe-rmda:trunk.weekly<br>docker push cd-docker-registry.successfactors.com:5000/bizx-database/oracle-xe-rmda:trunk.weekly</p><h1 id="Save-image"><a href="#Save-image" class="headerlink" title="Save image"></a>Save image</h1><p>docker commit <containerID> <your imagename>ll<br>docker save -o <your saved name>.tar   <image></image></your></your></containerID></p><h1 id="Load-image"><a href="#Load-image" class="headerlink" title="Load image"></a>Load image</h1><p>Docker load -i  <your saved name>.tar </your></p><h1 id="Troubleshooting"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting</h1><h2 id="docker-解决-x509-certificate-signed-by-unknown-authority"><a href="#docker-解决-x509-certificate-signed-by-unknown-authority" class="headerlink" title="docker 解决 x509: certificate signed by unknown authority"></a>docker 解决 x509: certificate signed by unknown authority</h2><p>/etc/docker/daemon.json添加如下配置<br>{<br>  “insecure-registries”: [“registry.xxx.xxx.cn”]<br>}</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>scrumInCDP</title>
       <link href="/2020/01/07/Scrum%20In%20CDP/"/>
       <url>/2020/01/07/Scrum%20In%20CDP/</url>
