@@ -54,7 +54,7 @@
 <meta property="og:description" content="Installationhttps:&#x2F;&#x2F;www.runoob.com&#x2F;docker&#x2F;ubuntu-docker-install.html  Basic commandsdocker images 查看所有本地镜像docker ps -a 查看所有本地创建的容器docker rm  删掉一个本地容器docker rmi : 删除本地一个或多少镜像 build and pushdocker tag c">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-16T02:19:08.000Z">
-<meta property="article:modified_time" content="2020-01-16T02:29:02.430Z">
+<meta property="article:modified_time" content="2020-01-16T07:43:14.338Z">
 <meta property="article:author" content="Miracle Ouyang">
 <meta name="twitter:card" content="summary">
 
@@ -229,7 +229,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-01-16 10:19:08 / Modified: 10:29:02" itemprop="dateCreated datePublished" datetime="2020-01-16T10:19:08+08:00">2020-01-16</time>
+              <time title="Created: 2020-01-16 10:19:08 / Modified: 15:43:14" itemprop="dateCreated datePublished" datetime="2020-01-16T10:19:08+08:00">2020-01-16</time>
             </span>
 
           
@@ -253,8 +253,8 @@
         <h1 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h1><p><a href="https://www.runoob.com/docker/ubuntu-docker-install.html" target="_blank" rel="noopener">https://www.runoob.com/docker/ubuntu-docker-install.html</a> </p>
 <h1 id="Basic-commands"><a href="#Basic-commands" class="headerlink" title="Basic commands"></a>Basic commands</h1><p>docker images 查看所有本地镜像<br>docker ps -a 查看所有本地创建的容器<br>docker rm <container_id> 删掉一个本地容器<br>docker rmi : 删除本地一个或多少镜像</container_id></p>
 <h1 id="build-and-push"><a href="#build-and-push" class="headerlink" title="build and push"></a>build and push</h1><p>docker tag c8917e372922 cd-docker-registry.successfactors.com:5000/bizx-database/oracle-xe-rmda:trunk.weekly<br>docker push cd-docker-registry.successfactors.com:5000/bizx-database/oracle-xe-rmda:trunk.weekly</p>
-<h1 id="Save-image"><a href="#Save-image" class="headerlink" title="Save image"></a>Save image</h1><p>docker commit <containerID> <your imagename>ll<br>docker save -o <your saved name>.tar   <image></image></your></your></containerID></p>
-<h1 id="Load-image"><a href="#Load-image" class="headerlink" title="Load image"></a>Load image</h1><p>Docker load -i  <your saved name>.tar </your></p>
+<h1 id="Save-image"><a href="#Save-image" class="headerlink" title="Save image"></a>Save image</h1><p>docker commit &lt;&lt;<containerID>&gt;&gt; &lt;&lt;<your imagename>&gt;&gt;<br>docker save -o &lt;&lt;<your saved name>&gt;&gt;.tar   &lt;&lt;<image>&gt;&gt;</image></your></your></containerID></p>
+<h1 id="Load-image"><a href="#Load-image" class="headerlink" title="Load image"></a>Load image</h1><p>Docker load -i  &lt;&lt;<your saved name>&gt;&gt;.tar </your></p>
 <h1 id="Troubleshooting"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting</h1><h2 id="docker-解决-x509-certificate-signed-by-unknown-authority"><a href="#docker-解决-x509-certificate-signed-by-unknown-authority" class="headerlink" title="docker 解决 x509: certificate signed by unknown authority"></a>docker 解决 x509: certificate signed by unknown authority</h2><p>/etc/docker/daemon.json添加如下配置<br>{<br>  “insecure-registries”: [“registry.xxx.xxx.cn”]<br>}</p>
 
     </div>
