@@ -54,7 +54,7 @@
 <meta property="og:description" content="问题描述酒吧里，一个美女问一个绅士要不要与她玩一个游戏，游戏描述如下：两个各持一枚硬币，并各自选择硬币的正反面展示，如果硬币均为正面，绅士获得2美元，如果均为反面，绅士获得1美元，其他情况绅士付给美女2美元。绅士的盈亏状况可以用下表来描述： 正     反正    +3    -2反    -2    +1如果两人都是随机（1&#x2F;2的概率）出正反面，根据概率来看他们的期望都是0，也就是不赚不亏，游戏">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-22T07:26:03.000Z">
-<meta property="article:modified_time" content="2020-01-22T07:35:39.126Z">
+<meta property="article:modified_time" content="2020-01-22T08:00:58.696Z">
 <meta property="article:author" content="Miracle Ouyang">
 <meta property="article:tag" content="game theory">
 <meta name="twitter:card" content="summary">
@@ -230,7 +230,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-01-22 15:26:03 / Modified: 15:35:39" itemprop="dateCreated datePublished" datetime="2020-01-22T15:26:03+08:00">2020-01-22</time>
+              <time title="Created: 2020-01-22 15:26:03 / Modified: 16:00:58" itemprop="dateCreated datePublished" datetime="2020-01-22T15:26:03+08:00">2020-01-22</time>
             </span>
 
           
@@ -263,6 +263,7 @@
 <p>若x&gt;38，则可得y&lt;3x−18x−3，3x−18x−3 是一个减函数，在x=1（x是概率有最大值1）时取最小值 25；</p>
 <p>若x&lt;38，则可得y&gt;3x−18x−3，3x−18x−3 是一个减函数，在x=0（x是概率有最小值0）时取最大值 13。</p>
 <p>综上，无论绅士以何种概率出硬币，美女可以以13&lt;y&lt;25的概率出正面获得恒正的收益。</p>
+<h1 id="延伸"><a href="#延伸" class="headerlink" title="延伸"></a>延伸</h1><p>应用传统决定论中的“最小最大” 准则，即博弈的每一方都假设对方的所有功略的根本目的是使自己最大程度地失利，并据此最优化自己的对策，诺伊曼从数学上证明，通过一定的线性运算，对于每一个二人零和博弈，都能够找到一个“最小最大解” 。通过一定的线性运算，竞争双方以概率分布的形式随机使用某套最优策略中的各个步骤，就可以最终达到彼此盈利最大且相当。当然，其隐含的意义在于，这套最优策略并不依赖于对手在博弈中的操作。用通俗的话说，这个著名的最小最大定理所体现的基本“理性” 思想是“抱最好的希望，做最坏的打算” 。<br>所以另外个求解：<br>绅士/美女   女正面   女反面<br>正面        3，－3   -2，+2<br>反面        -2，+2   1，－1<br>假设我们出正面的概率是x，反面的概率是1-x。为了使利益最大化，应该在对手出正面或反面的时候我们的收益都相等，不然对手总是可以改变正反面出现的概率让我们的总收入减少，由此列出方程就是3x+(-2)<em>(1-x)=(-2)*x+1</em>(1-x)<br>这个方程通俗的说就是在对手一直出正面你得到的利益，和你对手一直出反面得到利益是一样的且最大。解方程得x=3/8,也就是说平均每八次出示3次正面，5次反面是我们的最优策略。而将x=3/8代入到收益表达式3<em>x+(-2)</em>(1-x)中就可得到每次的期望收入，计算结果是-1/8元。<br>同样，设美女出正面的概率是y，反面的概率是1-y，列方程-3y+2(1-y)=2y+(-1)*(1-y)<br>解得y也等于3/8，而美女每次的期望收益则是2(1-y)-3y=1/8元。这告诉我们，在双方都采取最优策略的情况下，平均每次美女赢1/8元。其实只要美女采取了(3/8,5/8)这个方案，不论你再采用什么方案，都是不能改变局面的。如果全部出正面，每次的期望收益是(3+3+3-2-2-2-2-2)/8=-1/8元<br>如果全部出反面，每次的期望收益也是(-2-2-2+1+1+1+1+1)/8=-1/8元。而任何策略无非只是上面两种策略的线性组合，所以期望还是-1/8元。但是当你也采用最佳策略时，至少可以保证自己输得最少。否则，你肯定就会被美女采用的策略针对，从而赔掉更多。看起来这个博弈模型似乎没有什么用处，但是其实这可能牵涉了金融市场定价中最重要的一个模型：定价权重模型了。<br>总的来说“博弈论”其本质是将日常生活中的竞争矛盾以游戏的形式表现出来，并使用数学和逻辑学的方法来分析事物的运作规律。既然有游戏的参与者那么也必然存在游戏规则的制定者。深入的了解竞争行为的本质，有助于我们分析和掌握竞争中事物之间的关系，更方便我们对规则进行制定和调整，使其最终按照我们所预期的目的进行运作。</p>
 
     </div>
 
@@ -347,7 +348,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数学求解"><span class="nav-number">2.</span> <span class="nav-text">数学求解</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数学求解"><span class="nav-number">2.</span> <span class="nav-text">数学求解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#延伸"><span class="nav-number">3.</span> <span class="nav-text">延伸</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
